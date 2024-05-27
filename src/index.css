@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+--main-color:#23262f;
+--sec-color:#777e90;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Rubik", sans-serif;
+  color: var(--main-color);
+}
+html {
+  direction: rtl;
+}
+h1 , p{
+margin: 0;
+}
+li {
+  list-style: none;
+}
+.section__padding {
+  padding: 3rem 0;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.container {
+  padding:0 4rem ;
+}
+@media (max-width:780px) {
+  .container {
+    padding:0 2rem ;
+  }
+}
+a {
+  clip: unset;
+  text-decoration: none;
+  color: unset;
 }

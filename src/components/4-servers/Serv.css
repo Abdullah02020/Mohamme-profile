@@ -1,0 +1,43 @@
+.serv {
+}
+.serv .serv-itile {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+.serv .serv-items {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.serv .serv-items .box {
+  width: 240px;
+  border: 1px solid var(--main-color);
+  padding: 20px 10px;
+  border-radius: 25px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}.serv .serv-items .box:hover {
+transform: translateY(-15px);
+}
+.serv .serv-items .box svg {
+  font-size: 2.6rem;
+  margin-bottom: 0.6rem;
+}
+.serv .serv-items .box h1 {padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+.serv .serv-items .box p {line-height: 1.4rem;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+@media (max-width:650px) {
+  .serv .serv-items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

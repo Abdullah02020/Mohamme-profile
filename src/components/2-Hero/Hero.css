@@ -1,0 +1,96 @@
+.hero {
+  justify-content: space-between;
+  overflow: hidden;
+}
+.text {
+  width: 50%;
+}
+.text .icons {
+  font-size: 30px;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.text .icons svg {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.text .icons svg:hover {
+  transform: translateY(-4px);
+}
+.text h1 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+.text p {
+  text-align: right;
+  line-height: 25px;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.text .cont {
+  color: var(--main-color);
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.text .cont::before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 0;
+  height: 0; /* Initial height */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 25px;
+  transition: height 0.5s ease;
+}
+.text .cont:hover {
+  color: #fff;
+}
+.text .cont:hover::before {
+  width: 102%;
+  height: 105%;
+}
+.text .ic {
+  border: none;
+}
+img {
+  width: 35%;
+  border-radius: 25px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+  .text h1 {
+    font-size: 3rem;
+  }
+  .text p {
+    text-align: center;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .text .icons {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,45 @@
+.header {
+  justify-content: space-between;
+  border-bottom: 1px solid #777e903b;
+  padding-bottom: 1rem;
+}
+.header ul {
+  gap: 2rem;
+  padding: 0;
+}
+
+.header h1 {
+  color: var(--main-color);
+}
+
+.header p {
+  color: var(--sec-color);
+  text-align: end;
+}
+
+.header ul li a {
+  color: var(--sec-color);
+  font-weight: 500;
+  transition: 0.5s;
+}
+.header ul li a:hover {
+  color: var(--main-color);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  ul li a {
+    font-size: 11px;
+  }
+  ul {
+    gap: 1rem;
+  }
+  .header p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+.Lpro {
+  overflow: hidden;
+}
+
+.Lpro-header {
+  text-align: center;
+  padding-bottom: 4rem;
+  font-weight: 600;
+  font-size: 2.6rem;
+}
+.Lpro .box {
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.Lpro .box:not(:last-child) {
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #777e903b;
+  margin-bottom: 2rem;
+}
+.Lpro .text {
+  width: 45%;
+}
+.Lpro .text h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+.Lpro .text p {    line-height: 28px;
+}
+
+.Lpro img {
+  width: 45%;
+}
+
+@media (max-width:760px) {
+  .Lpro .box {
+flex-direction: column;
+gap: 2rem;
+  }
+  .Lpro .box .text {
+    width: 100%;
+  }
+  .Lpro img {
+    width: 100%;
+  }
+}

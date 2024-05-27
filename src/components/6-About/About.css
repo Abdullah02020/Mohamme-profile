@@ -1,0 +1,58 @@
+.My {
+  justify-content: space-between;
+  overflow: hidden;
+}
+.My__title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.services {
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.services .box {
+  transition: 0.5s;
+}
+.services .box:hover {
+  transform: translateY(-10px);
+}
+.services .box .box-item {
+  gap: 1rem;
+  border: 1px solid var(--sec-color);
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.services .box .box-item p {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.services .box .box-item h1 {
+}
+
+@media (max-width: 550px) {
+  .My {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .services {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .services .box .box-item {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 230px;
+  }
+  .services {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .services .box .box-item p {
+    font-size: 1.4rem;
+  }
+}

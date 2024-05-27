@@ -1,0 +1,53 @@
+.text-con {
+  text-align: center;
+}
+.text-con h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+  padding-bottom: 1rem;
+}
+.text-con p {
+  line-height: 27px;
+  color: var(--sec-color);
+  width: 75%;
+  margin: auto;
+}
+.link {
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.link a {
+  gap: 1rem;
+  color: var(--sec-color);
+  transition: 0.5s;
+}
+.link svg {
+  font-size: 2rem;
+  color: var(--sec-color);
+  transition: 0.5s;
+}
+.link p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  transition: 0.5s;
+}
+
+.link a:hover svg {
+  font-weight: 700;
+  color: var(--main-color);
+}
+.link a:hover p {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+@media (max-width: 550px) {
+  .text-con p {
+    width: 100%;
+  }
+  .link {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
